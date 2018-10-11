@@ -1,0 +1,29 @@
+* {
+/* styles in here affect everything!!!! */
+/* fonts from google
+font-family: 'Indie Flower', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+font-family: 'Montserrat', sans-serif;
+box-sizing:border-box;
+
+}
+
+@media screen and (max-width: 799px) {
+  <img src="images/img_france2.jpg" alt="France picture" style="width:100%"> {
+    /* this tells the browser to "span" the grid columns */
+    grid-column-start: 1;
+    /* notice the grid-column-end is number of columns + 1 */
+    grid-column-end: 4;
+  }
+
+}
+@media screen and (min-width: 800px) {
+  <img src="images/img_france2.jpg" alt="France picture" style="width:100%">
+    display:grid;
+    /* removed grid-column-gap it causes a horizontal scroll
+    grid-column-gap: 10px;
+    */
+    grid-template-columns: 50% 50%;
+
+  }
